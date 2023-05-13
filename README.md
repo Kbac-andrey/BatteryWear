@@ -1,27 +1,34 @@
 # BatteryWear
+BatteryWear is an application designed to identify schools with the highest number of battery issues. It aims to provide users with an easy and intuitive way to find schools and gather relevant information about the battery wear of their devices.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.0.2.
+## Design Explanation
+The design of BatteryWear focuses on simplicity and usability, ensuring that users can quickly locate schools with battery issues and access the necessary information. The key design elements and assumptions of the application are as follows:
 
-## Development server
+1. Search Field: The application features a prominent search field where users can enter the academy id of a specific school. This allows users to quickly find the desired school without having to navigate through complex menus or lists.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+2. School List: BatteryWear presents users with a list of schools based on their search query. The list displays relevant information about each school. This enables users to scan the results efficiently and select the school they are interested in.
 
-## Code scaffolding
+3. Detailed Information: When a user selects a school from the list, BatteryWear provides more detailed information about the battery wear of devices in that particular school. This information may include battery health statistics.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Assumptions
+The design and implementation of BatteryWear are based on the following assumptions:
+1. Data Availability: BatteryWear assumes that the necessary data regarding schools and battery wear is available and accessible through API. The application relies on `battery-data.json` file witch store locally.
 
-## Build
+2. Battery Wear Metrics: BatteryWear assumes that the battery wear of devices can be accurately measured and quantified using relevant metrics. These metrics may include battery health average percent per day. The application utilizes these metrics to evaluate and compare the battery wear of different schools.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+3. User Expectations: BatteryWear assumes that users are primarily interested in identifying schools with high battery wear. Therefore, the design focuses on presenting relevant information related to battery wear
 
-## Running unit tests
+It is important to note that these assumptions are made based on the available information and requirements provided for the BatteryWear application. As the development progresses and additional information becomes available, the design and assumptions may evolve to better meet the needs of the users
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+# Technical note
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli). If you want run application you should   Node.js version `12.11.1` or higher you can  download stable version here `https://nodejs.org/en`.
 
-## Running end-to-end tests
+# Development server
+Run `ng serve` or use npm command `npm run start` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+##Running unit tests
 
-## Further help
+Run `ng test` or use npm command `npm run test` to execute the unit tests via [Karma](https://karma-runner.github.io) .
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+

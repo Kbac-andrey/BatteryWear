@@ -1,0 +1,11 @@
+<mat-accordion multi>
+  <mat-expansion-panel *ngFor="let school of filteredSchools" class="expansion-panel">
+   <mat-expansion-panel-header>
+      <mat-panel-title>
+       School: {{ school.academyId }}
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+
+    <app-device-list [school]="school"></app-device-list>
+  </mat-expansion-panel>
+</mat-accordion>
